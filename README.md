@@ -35,3 +35,6 @@ Before running the project, ensure the following are installed:
    ```bash
    git clone https://github.com/yourusername/patient-form-ocr.git
    cd patient-form-ocr
+2.Install Python dependencies:
+''' bash
+      pip install -r requirements.txt
