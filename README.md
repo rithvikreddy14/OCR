@@ -24,6 +24,15 @@ A Python-based solution to automate extraction of patient assessment data from s
 ## Installation
 
 1. Clone repository:
-```bash
-git clone https://github.com/yourusername/patient-form-ocr.git
-cd patient-form-ocr
+'''git clone https://github.com/rithvikreddy14/patient-form-ocr.git'''
+
+2.Install dependencies:
+'''pip install -r requirements.txt'''
+3.Database setup:
+'''psql -U postgres -f schema.sql'''
+
+##Usage
+
+1.Place form images in project root (e.g., sample_form.jpg)
+2.Run OCR processor:
+'''python ocr_script.py'''
