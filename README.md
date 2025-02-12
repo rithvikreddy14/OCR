@@ -1,38 +1,37 @@
 # Patient Assessment Form OCR Processor
 
-A Python-based solution to automate extraction of patient assessment data from scanned forms (printed/handwritten) using OCR, convert it to structured JSON, and store in a PostgreSQL database.
+A Python-based solution to automate extraction of patient assessment data from scanned forms (printed/handwritten) using OCR, convert it to structured JSON, and store it in a PostgreSQL database.
+
+---
 
 ## Features
 
-- 📷 OCR processing using Tesseract with image preprocessing
-- 🗂️ Structured JSON output matching medical form requirements
-- 🗄️ PostgreSQL database integration
-- 🔍 Regex-based data parsing for key medical fields
+- 📷 **OCR Processing**: Uses Tesseract OCR with image preprocessing (grayscale, thresholding) for accurate text extraction.
+- 🗂️ **Structured JSON Output**: Conforms to medical form requirements, including patient details, treatment data, and symptom ratings.
+- 🗄️ **Database Integration**: Stores extracted data in a PostgreSQL database with a well-defined schema.
+- 🔍 **Regex-Based Parsing**: Extracts key fields like patient name, DOB, treatment details, and symptom ratings.
+
+---
 
 ## Prerequisites
 
+Before running the project, ensure the following are installed:
+
 1. **Tesseract OCR**  
-   Install from [official docs](https://github.com/tesseract-ocr/tesseract)  
-   Add to system PATH for Python access
+   Install from [official docs](https://github.com/tesseract-ocr/tesseract).  
+   Add Tesseract to your system PATH for Python access.
 
 2. **PostgreSQL**  
-   [Install guide](https://www.postgresql.org/download/)
+   Download and install from the [official website](https://www.postgresql.org/download/).
 
 3. **Python 3.8+**  
-   Required packages in `requirements.txt`
+   Ensure Python is installed. Install required packages using `requirements.txt`.
+
+---
 
 ## Installation
 
-1. Clone repository:
-'''git clone https://github.com/rithvikreddy14/patient-form-ocr.git'''
-
-2.Install dependencies:
-'''pip install -r requirements.txt'''
-3.Database setup:
-'''psql -U postgres -f schema.sql'''
-
-##Usage
-
-1.Place form images in project root (e.g., sample_form.jpg)
-2.Run OCR processor:
-'''python ocr_script.py'''
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/patient-form-ocr.git
+   cd patient-form-ocr
